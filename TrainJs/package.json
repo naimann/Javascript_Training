@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "axios": "^1.6.8",
+    "typescript": "^5.4.5",
+    "typescript-require": "^0.3.0"
+  }
+}

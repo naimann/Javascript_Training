@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Html Calculator</title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+
+<body class="whole_page">
+    <div class="div_one">
+        <img src="./assets/10_Profile.png" width="100px" height="100px"/>
+        <h1>Calculator</h1>
+    </div>
+
+    <form style="padding-bottom: 10px;">
+        <input id="ResultBox" type="text" style="width: 290px; height: 30px; text-align: end;">
+    </form>
+
+    <div class="numberpad_grid" id="numpad">
+        <button onclick="Clear()" style="grid-column-start: 1; grid-column-end: 3; grid-row: 1;">Clear</button>
+        <button onclick="Backspace()" style="grid-column-start: 3; grid-column-end: 4; grid-row: 1;">←</button>
+        
+        <button onclick="Input('/')" style="grid-column: 4; grid-row: 1;">/</button>
+
+        <button onclick="Input(7)" style="grid-column: 1; grid-row: 2;">7</button>
+        <button onclick="Input(8)" style="grid-column: 2; grid-row: 2;">8</button>
+        <button onclick="Input(9)" style="grid-column: 3; grid-row: 2;">9</button>
+        <button onclick="Input('*')" style="grid-column: 4; grid-row: 2;">*</button>
+
+        <button onclick="Input(4)" style="grid-column: 1; grid-row: 3;">4</button>
+        <button onclick="Input(5)" style="grid-column: 2; grid-row: 3;">5</button>
+        <button onclick="Input(6)" style="grid-column: 3; grid-row: 3;">6</button>
+        <button onclick="Input('-')" style="grid-column: 4; grid-row: 3;">-</button>
+
+        <button onclick="Input(1)" style="grid-column: 1; grid-row: 4;">1</button>
+        <button onclick="Input(2)" style="grid-column: 2; grid-row: 4;">2</button>
+        <button onclick="Input(3)" style="grid-column: 3; grid-row: 4;">3</button>
+        <button onclick="Input('+')" style="grid-column: 4; grid-row: 4;">+</button>
+
+        <button onclick="Input(0)" style="grid-column-start: 1; grid-column-end: 3; grid-row: 5;">0</button>
+        <button onclick="Input('.')" style="grid-column: 3; grid-row: 5;">.</button>
+        <button onclick="Process()" style="grid-column: 4; grid-row: 5;">=</button>
+    </div>
+
+    <div class="end_text">
+        <p></p>
+        <p>NaiMann @ May 2024</p>
+        <p></p>
+    </div>
+
+    <div class="history_text">
+        <p>[ History ]</p>
+        <ul id="HistoryDiv">
+            
+        </ul> 
+    </div>
+
+    <script src="./scripts.js"></script>
+
+</body>
+
+</html>
